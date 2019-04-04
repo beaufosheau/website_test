@@ -7,6 +7,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/styles.css">
     <title>Three Square Market | Micro Market Solutions</title>
   </head>
@@ -18,7 +19,8 @@
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
           <a class="navbar-brand" href="#">
-            <img src="images/32M_logo_small.png" width="38" height="38" class="d-inline-block align-top" alt="">  Three Square Market
+            <img src="images/32M_logo_small.png" width="38" height="38" class="d-inline-block align-top" alt="">
+            Three Square Market
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,16 +29,16 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-lg-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#services">Learn More<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="#">Learn More<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#mobile">Mobile</a>
+                <a class="nav-link" href="#">Mobile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#team"> Our Team</a>
+                <a class="nav-link" href="#"> Our Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" href="#shop">Operator Shop</a>
+                <a class="nav-link disabled" href="#">Operator Shop</a>
               </li>
             </ul>
           </div>
@@ -240,7 +242,7 @@
 
     <!-- Section 4: Contact -->
     <section class="contact">
-      <div class="contact-content">
+      <div class="contact-content" data-aos="fade-up" data-aos-delay="00" data-aos-duration="500">
         <h1>Get in touch with us</h1>
         <form>
           <div class="container">
@@ -332,5 +334,17 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init()
+    </script>
+    <script type="text/javascript">
+      $(document).scroll(function() {
+        $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+      });
+      $('.navbar-nav>li>a').on('click', function(){
+      $('.navbar-collapse').collapse('hide');
+      });
+    </script>
   </body>
 </html>
