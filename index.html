@@ -18,7 +18,7 @@
       <!-- Navigation menu -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="index.html">
             <img src="images/32M_logo_small.png" width="38" height="38" class="d-inline-block align-top" alt="">
             Three Square Market
           </a>
@@ -29,13 +29,13 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-lg-auto">
               <li class="nav-item">
-                <a class="nav-link" href="#">Learn More<span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="learnmore.html">Learn More<span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Mobile</a>
+                <a class="nav-link" href="mobile.html">Mobile</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#"> Our Team</a>
+                <a class="nav-link" href="team.html"> Our Team</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link disabled" href="#">Operator Shop</a>
@@ -100,17 +100,16 @@
 
     <!-- Section 1: Learn More -->
     <section class="sec1 services" id="services">
-      <!-- Header -->
+
+      <!-- Information -->
       <div class="container-fluid">
-        <div class="row header justify-content-center">
-          <div class="col-8 align-self-start header-text">
-            <h1>RETHINK THE EXPERIENCE</h1>
-            <p>Less than 30% of employees use traditional vending options.  Engage the other 70% of employees with a micro market, or as we prefer to call it, a break room market!<br> <strong>What would 70% more usage mean to your business?</strong></p>
-          </div>
-        </div>
-        <div class="row stripe justify-content-center">
-          <div class="col-lg-10 carousel-full">
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <section class="info">
+          <div class="info-content">
+            <div class="info-text" data-aos="fade-up" data-aos-delay="00" data-aos-duration="500">
+              <h1>RETHINK THE EXPERIENCE</h1>
+              <p>Less than 30% of employees use traditional vending options.  Engage the other 70% of employees with a micro market, or as we prefer to call it, a break room market!<br> <strong>What would 70% more usage mean to your business?</strong></p>
+            </div>
+            <div class="info-indicators">
               <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                   <img src="images/design_icon.png" alt="">
@@ -129,22 +128,30 @@
                   <h5>GLOBAL</h5>
                 </li>
               </ol>
+            </div>
+          </div>
+        </section>
+
+        <div class="row stripe justify-content-center">
+          <div class="col-lg-10 carousel-full">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+
               <div class="carousel-inner" role="listbox">
                 <!-- Slide One -->
                 <div class="carousel-item active justify-content-center">
-                  <div class="carousel-caption d-block">
+                  <div class="carousel-caption d-flex">
                     <h2>RISE TO SUCCESS</h2>
                     <br>
                     <h5>Since day one, our goal has been to use technology to make business better.<br>
                     <br>
-                    RISE stands for Relentless Innovation, Service, and Execution. This is our promise to you ... we will remain relentless in our pursuit to make your business better.</h5>
+                    RISE stands for Relentless Innovation, Service, and Execution. This is our promise to you... we will remain relentless in our pursuit to make your business better.</h5>
                   </div>
                   <div class="carousel-image d-block" style="background-image: url('images/slide1.jp2')">
                   </div>
                 </div>
                 <!-- Slide Two  -->
                 <div class="carousel-item justify-content-center">
-                  <div class="carousel-caption d-block">
+                  <div class="carousel-caption d-flex">
                     <h2>FIRST TO MARKET</h2>
                     <br>
                     <h5>As one of the top priorities in our mission, our dedication to innovation is unmatched.<br>
@@ -152,14 +159,15 @@
                     From mobile checkout technology to intelligent inventory management. Learn about our first to market advancements that have been duplicated throughout the industry.<br></h5>
                     <a class="btn btnD1" href="#mobile">READ MORE</a>
                   </div>
-                  <div class="carousel-image d-block" style="background-image: url('images/slide2.jp2')">
+                  <div class="carousel-image d-flex" style="background-image: url('images/slide2.jp2')">
                   </div>
                 </div>
                 <!-- Slide Three -->
                 <div class="carousel-item justify-content-center">
-                  <div class="carousel-caption d-block">
+                  <div class="carousel-caption d-flex">
                     <h2>KEEP IN TOUCH</h2>
                     <br>
+                    <div class="w-100"></div>
                     <h5>Since day one we've dedicated ourselves to being your partner in business. To us, you are so much more than a sale.<br>
                     <br>
                     We offer free training and support, because just selling you our products isn't where our service ends. We stand by you every day, all day.
@@ -170,7 +178,7 @@
                 </div>
                 <!-- Slide Four -->
                 <div class="carousel-item justify-content-center">
-                  <div class="carousel-caption d-block">
+                  <div class="carousel-caption d-flex">
                     <h2>32M IS WORLDWIDE</h2>
                     <br>
                     <h5>At 32M, we've serviced markets in North America, Europe, Asia, and Australia since 2016. We continue to advance our software and hardware for use throughout the world. Ask about our dedicated international team located in Europe!<br>
@@ -186,6 +194,7 @@
           </div>
         </div>
       </div>
+
     </section>
 
     <!-- Section 2: Testimonials -->
@@ -327,8 +336,6 @@
       </div>
     </footer>
 
-
-
     <!-- JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -338,12 +345,44 @@
     <script>
       AOS.init()
     </script>
+
+    <!-- JS Snippets -->
     <script type="text/javascript">
-      $(document).scroll(function() {
-        $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+
+    // Fixes Navbar Collapse on Click
+    $(document).scroll(function() {
+      $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
+    });
+    $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+    });
+
+    // Fixes Active Carousel Class on Indicators Outside of Carousel Container
+    var $carousel = $('#carouselExampleIndicators');
+      $carousel.carousel();
+      var handled=false;//global variable
+
+      $carousel.bind('slide.bs.carousel', function (e) {
+          var current=$(e.target).find('.item.active');
+          var indx=$(current).index();
+          if((indx+2)>$('.carousel-indicators li').length)
+              indx=-1
+           if(!handled)
+           {
+              $('.carousel-indicators li').removeClass('active')
+              $('.carousel-indicators li:nth-child('+(indx+2)+')').addClass('active');
+           }
+           else
+           {
+              handled=!handled;//if handled=true make it back to false to work normally.
+           }
       });
-      $('.navbar-nav>li>a').on('click', function(){
-      $('.navbar-collapse').collapse('hide');
+
+      $(".carousel-indicators li").on('click',function(){
+         //Click event for indicators
+         $(this).addClass('active').siblings().removeClass('active');
+         //remove siblings active class and add it to current clicked item
+         handled=true; //set global variable to true to identify whether indicator changing was handled or not.
       });
     </script>
   </body>
