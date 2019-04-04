@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles.css">
     <title>Three Square Market | Micro Market Solutions</title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body data-spy="scroll" data-target=".navbar" data-offset="50" onload="carouselInterval()">
 
     <!-- Navbar Header -->
     <header>
@@ -98,7 +98,7 @@
       </div>
     </div>
 
-    <!-- Section 1: Learn More -->
+    <!-- Section 1: Info -->
     <section class="sec1 services" id="services">
 
       <!-- Information -->
@@ -111,7 +111,7 @@
             </div>
             <div class="info-indicators">
               <ol class="carousel-indicators">
-                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active" data-pause="false">
                   <img src="images/design_icon.png" alt="">
                   <h5>OUR MISSION</h5>
                 </li>
@@ -157,7 +157,6 @@
                     <h5>As one of the top priorities in our mission, our dedication to innovation is unmatched.<br>
                     <br>
                     From mobile checkout technology to intelligent inventory management. Learn about our first to market advancements that have been duplicated throughout the industry.<br></h5>
-                    <a class="btn btnD1" href="#mobile">READ MORE</a>
                   </div>
                   <div class="carousel-image d-flex" style="background-image: url('images/slide2.jp2')">
                   </div>
@@ -349,6 +348,7 @@
     <!-- JS Snippets -->
     <script type="text/javascript">
 
+
     // Fixes Navbar Collapse on Click
     $(document).scroll(function() {
       $('.navbar').toggleClass('scrolled', $(this).scrollTop() > $('.navbar').height());
@@ -356,6 +356,7 @@
     $('.navbar-nav>li>a').on('click', function(){
     $('.navbar-collapse').collapse('hide');
     });
+
 
     // Fixes Active Carousel Class on Indicators Outside of Carousel Container
     var $carousel = $('#carouselExampleIndicators');
@@ -384,6 +385,20 @@
          //remove siblings active class and add it to current clicked item
          handled=true; //set global variable to true to identify whether indicator changing was handled or not.
       });
+
+
+      // Adds Auto-scroll Functionality to Carousel on Mobile
+      var options = $("#carouselExampleIndicators").data()['bs.carousel']["_config"];
+      carouselInterval(); // Call listener function at run time
+
+      function carouselInterval() {
+        if ( $(window).width() < 991 ) { // If media query matches
+          options.interval = 3000;
+        } else {
+          options.interval = false;
+        }
+      };
+
     </script>
   </body>
 </html>
