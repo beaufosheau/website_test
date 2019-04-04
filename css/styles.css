@@ -280,6 +280,10 @@ header {
 .sec1 .carousel-caption .btn:hover {
   color: #0B4C8CBF;
 }
+
+.carousel-control {
+  display: none;
+}
 /*              END SECTION              */
 /*---------------------------------------*/
 
@@ -924,6 +928,14 @@ footer.footer .copyright figure {
     padding: 4rem 8rem;
   }
 
+  .sec1 .carousel-indicators {
+    display: none;
+  }
+
+  .carousel-control {
+    display: flex;
+  }
+
   /* Section 2 */
   .satisfaction .left-container {
     display: none;
@@ -1024,10 +1036,6 @@ footer.footer .copyright figure {
     font-size: 1rem;
   }
 
-  .sec1 .carousel-indicators {
-    display: none;
-  }
-
   .sec1 .carousel-caption h2 {
     font-size: 1.3rem;
   }
@@ -1037,9 +1045,10 @@ footer.footer .copyright figure {
   }
 
   .sec1 .carousel-caption {
-    padding: 2rem 2rem;
+    padding: 2rem 4rem;
   }
 
+  /* Section 2 */
   .satisfaction .right-container {
     background-position: center center;
   }
@@ -1102,7 +1111,7 @@ footer.footer .copyright figure {
   }
 
   .sec1 .carousel-caption {
-    padding: 2rem 1.5rem;
+    padding: 2rem 3rem;
   }
 
   /* Section 2 */

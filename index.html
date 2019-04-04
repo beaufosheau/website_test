@@ -189,6 +189,14 @@
                   </div>
                 </div>
               </div>
+              <a class="carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
           </div>
         </div>
@@ -388,16 +396,17 @@
 
 
       // Adds Auto-scroll Functionality to Carousel on Mobile
-      var options = $("#carouselExampleIndicators").data()['bs.carousel']["_config"];
-      carouselInterval(); // Call listener function at run time
+      // Call listener function at run time
 
       function carouselInterval() {
         if ( $(window).width() < 991 ) { // If media query matches
-          options.interval = 3000;
+          options.interval = 5000;
         } else {
           options.interval = false;
         }
       };
+      var options = $("#carouselExampleIndicators").data()['bs.carousel']["_config"];
+      carouselInterval();
 
     </script>
   </body>
