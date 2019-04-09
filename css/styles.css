@@ -632,7 +632,7 @@ footer.footer .copyright figure {
   background-image: linear-gradient(
                     rgba(255, 255, 255, 0.9),
                     rgba(255, 255, 255, 0.7)),
-                    url('../images/construction_bg.jp2');
+                    url('../images/construction_bg.jpg');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
