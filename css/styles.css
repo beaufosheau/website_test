@@ -623,10 +623,10 @@ footer.footer .copyright figure {
 
 
 /*-------------------------------------------------*/
-/*                PAGE TWO ELEMENTS                */
+/*        UNDER CONSTRUCTION PAGE ELEMENTS         */
 /*-------------------------------------------------*/
 
-/*--------- CONSTRUCTION ----------*/
+/*--------- UNDER CONSTRUCTION ----------*/
 .construction {
   color: #394650BF;
   background-image: linear-gradient(
@@ -661,6 +661,137 @@ footer.footer .copyright figure {
 }
 /*              END SECTION              */
 /*---------------------------------------*/
+
+
+
+/*-------------------------------------------------*/
+/*            LEARN MORE PAGE ELEMENTS             */
+/*-------------------------------------------------*/
+
+/*--------- LEARN MORE ----------*/
+#learn-more .main {
+  margin-top: 4rem;
+}
+
+/* Learn - Hero Section */
+#learn-more .learn-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+                    rgba(255, 255, 255, 0.9),
+                    rgba(255, 255, 255, 0.7)),
+                    url('../images/construction_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+  min-height: 60vh;
+}
+
+.learn-hero h2 {
+  font-size: 3rem;
+}
+
+/* Learn - Intro Section */
+.learn-intro {
+  font-size: 1.3rem;
+  background: linear-gradient(30deg,
+              rgba(34,58,106,1) 0%,
+              rgba(51,97,126,1) 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.learn-intro strong {
+  font-weight: 600;
+}
+
+.learn-intro .content .right-just {
+  text-align: right;
+  margin: 0;
+}
+
+/* Learn - Content */
+.learn-content {
+  padding: 60px;
+  color: #394650;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.learn-content .section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.learn-content .section img {
+  width: 25%;
+  height: 25%;
+  padding: 0rem 3rem 6rem 1rem;
+}
+
+.learn-content .section .text {
+  width: 70%;
+}
+
+.learn-content h2 {
+  font-size: 1.7em;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.learn-content p {
+  margin-bottom: 1rem;
+  width: 100%;
+  min-height: 72px;
+}
+
+.learn-content hr {
+  margin: 2rem 0;
+  width: 100%;
+}
+
+/* Learn - Testimonials */
+
+#learn-more .testimonials {
+  text-align: center;
+  background: #0B4C8C20;
+}
+
+#learn-more .testimonials h1 {
+  padding: 3rem;
+}
+
+#learn-more .carousel-item {
+  padding: 8rem;
+  padding-top: 0;
+  text-align: center;
+  height: 225px;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 60%;
+}
+
+#learn-more .carousel-item p {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#learn-more .carousel-item .signature {
+  padding-top: 1.5rem;
+  font-size: 1.3rem;
+  font-family: 'La Belle Aurore', cursive;
+}
+
+
+
 
 
 
@@ -1011,6 +1142,54 @@ footer.footer .copyright figure {
   .fixed-bottom {
     position: relative;
   }
+
+  /* Learn More Page */
+  .learn-hero h2 {
+    font-size: 2.4rem;
+  }
+
+  .learn-intro {
+    padding: 60px 30px;
+    font-size: 1rem;
+  }
+
+  .learn-content {
+    padding: 60px 45px;
+  }
+
+  .learn-content .section img {
+    display: none;
+  }
+
+  .learn-content .section .text {
+    width: 100%;
+  }
+
+  .learn-content h2 {
+    font-size: 1.5em;
+  }
+
+  .learn-content p {
+    margin-bottom: .9rem;
+  }
+
+  #learn-more .testimonials h1 {
+    padding: 2rem;
+    font-size: 2rem;
+  }
+
+  #learn-more .carousel-item {
+    padding: 2rem;
+    padding-top: 0;
+    text-align: center;
+    height: 225px;
+  }
+
+  #learn-more .carousel-item p {
+    width: 100%;
+    margin: 0 auto;
+  }
+
 }
 
 /* 479px */
@@ -1167,5 +1346,35 @@ footer.footer .copyright figure {
 
   .construction-container p {
     font-size: .9rem;
+  }
+
+  /* Learn More Page */
+  .learn-hero h2 {
+    font-size: 1.9rem;
+  }
+
+  .learn-intro {
+    padding: 50px 15px;
+    font-size: .8rem;
+  }
+
+  .learn-content h2 {
+    font-size: 1.3em;
+  }
+
+  .learn-content p {
+    margin-bottom: .7rem;
+  }
+
+  #learn-more .testimonials h1 {
+    font-size: 1.8rem;
+  }
+
+  #learn-more .carousel-item {
+    height: 225px;
+  }
+
+  #learn-more .carousel-item p {
+    font-size: 0.8rem;
   }
 }
