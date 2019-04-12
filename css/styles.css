@@ -889,9 +889,9 @@ footer.footer .copyright figure {
 .mobile-content .right-container {
   background-image: url('../images/mobile1.png');
   background-position: center center;
-  background-size: 23%;
+  background-size: 30%;
   background-repeat: no-repeat;
-  height: auto;
+  height: 100%;
   min-height: 30vh;
   float: left;
   width: 50%;
