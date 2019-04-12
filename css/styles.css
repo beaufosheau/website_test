@@ -380,9 +380,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  float: left;
   min-height: 45vw;
   width: 50%
-  float: left;
 }
 
 .overview .right-content {
@@ -886,15 +886,15 @@ footer.footer .copyright figure {
 }
 
 .mobile-content .right-container {
-  width: 50%;
+  background-image: url('../images/mobile1.png');
+  background-position: center center;
+  background-size: 23%;
+  background-repeat: no-repeat;
+  height: auto;
+  min-height: 30vh;
   float: left;
-  padding-left: 30px;
+  width: 50%;
   margin-bottom: 30px;
-}
-
-.mobile-content .right-container img {
-  width: 70%;
-  padding-left: 10rem;
 }
 
 .mobile-content .bottom-container {
