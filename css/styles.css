@@ -63,7 +63,6 @@ header {
 
 .navbar-light .navbar-nav .nav-link {
   color: #0B4C8CBF;
-
   transition: 0.2s;
 }
 /*              END SECTION              */
@@ -402,7 +401,6 @@ header {
   max-width: 100px;
   float: left;
   clear: right;
-  display: inline-block;
   margin: 25px 50px 50px 0px;
 }
 
@@ -679,15 +677,15 @@ footer.footer .copyright figure {
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(
-                    rgba(255, 255, 255, 0.9),
-                    rgba(255, 255, 255, 0.7)),
-                    url('../images/construction_bg.jpg');
+                    rgba(255, 255, 255, 0.95),
+                    rgba(255, 255, 255, 0.8)),
+                    url('../images/bg-learn.jpg');
   background-repeat: no-repeat;
-  background-position: 50% 70%;
+  background-position: center top;
   background-size: cover;
   text-align: center;
   padding: 60px;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .learn-hero h2 {
@@ -789,8 +787,235 @@ footer.footer .copyright figure {
   font-size: 1.3rem;
   font-family: 'La Belle Aurore', cursive;
 }
+/*              END SECTION              */
+/*---------------------------------------*/
 
 
+
+/*-------------------------------------------------*/
+/*            MOBILE PAGE ELEMENTS             */
+/*-------------------------------------------------*/
+
+/*--------- MOBILE ----------*/
+#mobile .main {
+  margin-top: 4.5rem;
+}
+
+/* Mobile - Hero Section */
+#mobile .mobile-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(
+                    rgba(255, 255, 255, 0.9),
+                    rgba(255, 255, 255, 0.7)),
+                    url('../images/bg-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: 50% 70%;
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+  min-height: 70vh;
+}
+
+.mobile-hero h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.mobile-hero h4 {
+  font-size: 1.2rem;
+  width: 60%;
+  max-width: 650px;
+  line-height: 3rem;
+}
+
+/* Mobile - Intro Section */
+.mobile-intro {
+  font-size: 1.1rem;
+  background: linear-gradient(30deg,
+              rgba(34,58,106,1) 0%,
+              rgba(51,97,126,1) 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.mobile-intro .content {
+  text-align: center;
+  width: 60%;
+  max-width: 800px;
+}
+
+.mobile-content {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+  float: left;
+}
+
+.mobile-content .top-container {
+  width: 100%;
+  height: 400px;
+  max-width: 920px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.mobile-content .left-container {
+  width: 50%;
+  float: left;
+  padding-right: 30px;
+  padding-top: 2rem;
+  margin-bottom: 30px;
+}
+
+.mobile-content .left-container h3 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  padding-bottom: 1rem;
+}
+
+.mobile-content .left-container p {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+.mobile-content .right-container {
+  width: 50%;
+  float: left;
+  padding-left: 30px;
+  margin-bottom: 30px;
+}
+
+.mobile-content .right-container img {
+  width: 70%;
+  padding-left: 10rem;
+}
+
+.mobile-content .bottom-container {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  border: rgba(197, 218, 255, 0.26) 2px solid;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem;
+  margin-bottom: 4rem;
+}
+
+.mobile-content .bottom-container h3 {
+  font-weight: 300;
+  font-size: 1.4rem;
+  padding: 4rem;
+  padding-bottom: 1.5rem;
+  width: 100%;
+}
+
+.mobile-content .bottom-container h4 {
+  font-weight: 400;
+  font-size: 1.1rem;
+  padding-bottom: 0.8rem;
+}
+
+.mobile-content .bottom-container p {
+  font-size: 0.9rem;
+}
+
+.mobile-content .bottom-container ul {
+  padding: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding-right: 4rem;
+}
+
+.mobile-content .bottom-container li {
+  list-style: none;
+  width: 50%;
+  padding-left: 4rem;
+  padding-bottom: 1rem;
+}
+
+.innovation {
+  display: inline-block;
+  width: 100%;
+  padding: 4rem;
+  background-color: #0B4C8C20;
+}
+
+.innovation .content {
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0rem;
+}
+
+.innovation .content h5 {
+  width: 100%;
+  font-weight: 100;
+  padding-bottom: 1rem;
+}
+
+.innovation .content ul {
+  padding-right: 3rem;
+}
+
+.innovation .content li {
+  padding-bottom: .5rem;
+  font-size: .9rem;
+}
+
+/*              END SECTION              */
+/*---------------------------------------*/
+
+
+
+/*-------------------------------------------------*/
+/*        UNDER CONSTRUCTION PAGE ELEMENTS         */
+/*-------------------------------------------------*/
+
+/*--------- UNDER CONSTRUCTION ----------*/
+.construction {
+  color: #394650BF;
+  background-image: linear-gradient(
+                    rgba(255, 255, 255, 0.9),
+                    rgba(255, 255, 255, 0.7)),
+                    url('../images/construction_bg.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 100%;
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.construction-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 80%;
+}
+
+.construction-container h1 {
+  font-size: 3rem;
+}
+
+.construction-container p {
+  font-size: 1.5rem;
+}
+/*              END SECTION              */
+/*---------------------------------------*/
 
 
 
@@ -1252,7 +1477,69 @@ footer.footer .copyright figure {
   .construction-container p {
     font-size: 1.1rem;
   }
+
+  /* Mobile Page */
+  .mobile-hero h2 {
+    font-size: 1.6rem;
+  }
+  
+  .mobile-hero h4 {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .mobile-intro .content {
+    width: 100%;
+  }
+
+  .mobile-intro {
+    font-size: 0.9rem;
+  }
+
+  .mobile-content .left-container {
+    width: 100%;
+  }
+
+  .mobile-content .left-container h3 {
+    font-size: 1.3rem;
+  }
+  
+  .mobile-content .left-container p {
+    font-size: 0.8rem;
+  }
+
+  .mobile-content .right-container {
+    width: 100%;
+  }
+  
+  .mobile-content .right-container img {
+    width: 50%;
+    padding: 2rem;
+  }
+  
+  .mobile-content .bottom-container h3 {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  
+  .mobile-content .bottom-container h4 {
+    font-size: 1rem;
+  }
+  
+  .mobile-content .bottom-container p {
+    font-size: 0.8rem;
+  }
+  
+  .mobile-content .bottom-container ul {
+    padding-right: 2rem;
+  }
+  
+  .mobile-content .bottom-container li {
+    width: 100%;
+    padding-left: 2rem;
+  }
 }
+
 
 /* 336px */
 @media only screen and (max-width: 21em) {
