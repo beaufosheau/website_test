@@ -621,48 +621,6 @@ footer.footer .copyright figure {
 
 
 /*-------------------------------------------------*/
-/*        UNDER CONSTRUCTION PAGE ELEMENTS         */
-/*-------------------------------------------------*/
-
-/*--------- UNDER CONSTRUCTION ----------*/
-.construction {
-  color: #394650BF;
-  background-image: linear-gradient(
-                    rgba(255, 255, 255, 0.9),
-                    rgba(255, 255, 255, 0.7)),
-                    url('../images/construction_bg.jpg');
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover;
-  width: 100%;
-  min-height: 70vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.construction-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 80%;
-}
-
-.construction-container h1 {
-  font-size: 3rem;
-}
-
-.construction-container p {
-  font-size: 1.5rem;
-}
-/*              END SECTION              */
-/*---------------------------------------*/
-
-
-
-/*-------------------------------------------------*/
 /*            LEARN MORE PAGE ELEMENTS             */
 /*-------------------------------------------------*/
 
@@ -794,7 +752,7 @@ footer.footer .copyright figure {
 
 
 /*-------------------------------------------------*/
-/*            MOBILE PAGE ELEMENTS             */
+/*              MOBILE PAGE ELEMENTS               */
 /*-------------------------------------------------*/
 
 /*--------- MOBILE ----------*/
@@ -979,6 +937,203 @@ footer.footer .copyright figure {
 
 
 /*-------------------------------------------------*/
+/*               TEAM PAGE ELEMENTS                */
+/*-------------------------------------------------*/
+
+/*--------- TEAM ----------*/
+#team .main {
+  margin-top: 4.5rem;
+}
+
+/* Team - Hero Section */
+#team .team-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient( to left,
+                    rgba(255, 255, 255, 0.8),
+                    rgba(255, 255, 255, 0.9)),
+                    url('../images/bg-team.jpg');
+  background-repeat: no-repeat;
+  background-position: center 10%;
+  background-size: cover;
+  text-align: center;
+  padding: 60px;
+  min-height: 70vh;
+  color: #0B4C8Ccf;
+}
+
+.team-hero h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.team-hero h4 {
+  font-size: 1.2rem;
+  width: 60%;
+  max-width: 650px;
+  line-height: 3rem;
+}
+
+/* Team - Intro Section */
+.team-intro {
+  font-size: 1.1rem;
+  background: linear-gradient(30deg,
+              rgba(34,58,106,1) 0%,
+              rgba(51,97,126,1) 100%);
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 60px;
+}
+
+.team-intro .content {
+  text-align: center;
+  width: 60%;
+  max-width: 800px;
+}
+
+.team-content {
+  width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
+.team-content .team-portraits {
+  display: flex;
+  justify-content: space-between;
+  align-content: space-around; 
+  width: 100%;
+  max-width: 920px;
+  margin: 0 auto;
+  padding-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.team-content .team-portraits .team-member {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 18%;
+  box-shadow: -2px 2px 6px #0B4C8C30;
+  text-align: center;
+}
+
+.team-content .team-portraits .team-member img {
+  width: 90%;
+  background: #fff;
+  opacity: 0.75;
+  transition: 0.3s;
+}
+.team-content .team-portraits .team-member img:hover {
+  transform: translateY(-7px);
+  box-shadow: -3px 5px 7px 1px #00000030;
+  background: #fff;
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.team-member h4 {
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  color: #888888;
+}
+
+.team-member a i {
+  padding-bottom: 1rem;
+  color: #0B4C8C90;
+  transition: 0.3s;
+}
+
+.team-member a i:hover {
+  color: #0B4C8C;
+  transition: 0.3s;
+}
+
+.team-content .map {
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #00000090;
+}
+
+.team-content .map iframe {
+  padding: 2rem;
+  width: 100%;
+  max-width: 920px;
+}
+
+/* contact form */
+.team-contact {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 920px;
+  color: #000000bf;
+}
+
+.team-contact .left-container h5 {
+  margin: 0;
+  padding: 0;
+}
+
+.team-contact .left-container {
+  width: 80%;
+  padding: 1.5rem;
+}
+
+.team-contact .left-container h5 {
+  font-size: 1.43rem;
+}
+
+.team-contact .left-container p {
+  font-size: .9rem;
+  padding-top: .6rem;
+  padding-left: .1rem;
+  color: #00000090;
+}
+
+.team-contact .left-container .form-control {
+  margin: 1rem;
+  margin-left: 0;
+}
+
+.team-contact .right-container {
+  width: 30%;
+  padding: 1.5rem;
+}
+
+.team-contact .right-container p {
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+  color: #00000090;
+}
+
+.team-contact .form-group .btnD1 {
+  background: transparent;
+  border: 1px solid #00000050;
+  color: #00000090;
+  height: 50px;
+  padding: 0.5rem 2rem;
+  transition: 0.2s;
+}
+
+.team-contact .form-group .btnD1:hover {
+  border: 1px solid #00000090;
+  color: #000000bf;
+  transition: 0.2s;
+  box-shadow: 0px 1px 1px 1px #00000030;
+}
+
+
+
+/*-------------------------------------------------*/
 /*        UNDER CONSTRUCTION PAGE ELEMENTS         */
 /*-------------------------------------------------*/
 
@@ -1017,6 +1172,24 @@ footer.footer .copyright figure {
 }
 /*              END SECTION              */
 /*---------------------------------------*/
+
+
+
+/*-------------------------------------------------*/
+/*          PRIVACY POLICY PAGE ELEMENTS           */
+/*-------------------------------------------------*/
+
+/*--------- TERMS & PRIVACY POLICY ----------*/
+.policy {
+  padding: 7rem;
+}
+
+.policy img {
+  padding-bottom: 2rem;
+}
+/*              END SECTION              */
+/*---------------------------------------*/
+
 
 
 
@@ -1416,6 +1589,11 @@ footer.footer .copyright figure {
     margin: 0 auto;
   }
 
+  .policy {
+    padding: 2rem;
+    padding-top: 5rem;
+    font-size: 0.8rem;
+  }
 }
 
 /* 479px */
@@ -1539,8 +1717,51 @@ footer.footer .copyright figure {
     width: 100%;
     padding-left: 2rem;
   }
-}
 
+  /* TEAM PAGE */
+  .team-hero h4 {
+    width: 90%;
+  }
+
+  .team-intro .content {
+    width: 100%;
+  }
+
+  .team-content .team-portraits {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .team-content .team-portraits .team-member {
+    width: 47.5%;
+    margin: .2rem;
+    margin-bottom: 1rem;
+  }
+
+  .team-content .map iframe {
+    padding: 2rem 0;
+    height: 300px;
+    width: 100%;
+  }
+
+  .team-contact {
+    flex-wrap: wrap;
+  }
+
+  .team-contact .left-container {
+    padding: 0;
+    padding-top: 3rem;
+    width: 100%;
+  }
+
+  .team-contact .right-container {
+    padding: 0;
+    padding-top: 2rem;
+    width: 100%;
+    text-align: center;
+  }
+
+}
 
 /* 336px */
 @media only screen and (max-width: 21em) {
@@ -1664,5 +1885,20 @@ footer.footer .copyright figure {
 
   #learn-more .carousel-item p {
     font-size: 0.8rem;
+  }
+
+  .mobile-content .left-container p {
+    padding: 0;
+    padding-top: 2rem;
+    margin: 0;
+  }
+
+  .innovation {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .innovation li {
+    font-size: .5rem;
   }
 }
