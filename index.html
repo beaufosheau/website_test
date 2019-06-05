@@ -50,6 +50,16 @@
 
     <!-- Home Hero (Carousel) -->
     <div id="home" class="carousel slide carousel-fullscreen" data-ride="carousel" data-interval="5000" data-pause="false">
+      <div class="login">
+        <a href="https://www.32market.com/Registration.aspx" class="login-btn">Register</a>
+        <a href="https://www.32market.com/MySquared.aspx" class="login-btn">Login</a>
+        <a href="policy.html" class="badges">
+            <img src="images/pci_dss.png" alt="PCI Badge">
+        </a>
+        <a href="policy.html" class="badges">
+            <img src="images/pci_padss.png" alt="PCI Badge">
+        </a>
+      </div>
       <div class="carousel-inner">
         <div class="carousel-item active left-just" style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.75)), url('images/people.jpg');">
           <div class="carousel-caption d-block d-md-block w-50 mx-auto">
@@ -93,15 +103,15 @@
       </div>
       <div class="container hero-buttons d-flex justify-content-center">
         <div class="user-btn-grp">
-          <a href="# "class="btn btn-primary">I'm a Market User</a>
-          <a href="#" class="btn btn-2-line btn-primary">I'm a Market Operator</a>
+          <a href="https://32market.com/MySquared.aspx"class="btn btn-primary">I'm a Market User</a>
+          <a href="#info" class="btn btn-2-line btn-primary">I'm a Market Operator</a>
           <a href="learnmore.html"  class="btn btn-primary">Learn More</a>
         </div>
       </div>
     </div>
 
     <!-- Section 1: Info -->
-    <section class="sec1 services" id="services">
+    <section id="info" class="sec1 services" id="services">
 
       <!-- Information -->
       <div class="container-fluid">
@@ -259,16 +269,16 @@
     </section>
 
     <!-- Section 4: Contact -->
-    <section class="contact">
+    <!-- <section class="contact">
       <div class="contact-content" data-aos="fade-up" data-aos-delay="00" data-aos-duration="300">
         <h1>Get in touch with us</h1>
-        <form>
+        <form method="post" action="form.php">
           <div class="container">
             <div class="row form-group justify-content-center">
               <input class="col form-control" type="text" name="" placeholder="Your Name (required)" required>
               <input class="col form-control" type="text" name="" placeholder="Your Email (required)" required>
               <div class="w-100"></div>
-              <textarea class="col form-control" name="" placeholder="Your Message" rows="1"></textarea>
+              <textarea class="col form-control" name="message" placeholder="Your Message" rows="1"></textarea>
             </div>
             <div class="form-group text-center">
               <button class="btn btnD1">Get in touch</button>
@@ -276,7 +286,7 @@
           </div>
         </form>
       </div>
-    </section>
+    </section> -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -314,7 +324,7 @@
               <nav class="learn">
                 <ul>
                   <li>
-                    <a href="contact.html">GDPR Inquiries</a>
+                    <a href="#">GDPR Inquiries</a> <!-- gdpr-inquiries.html -->
                   </li>
                   <li>
                     <a href="policy.html">Terms</a>
@@ -339,7 +349,7 @@
               <img src="images/32M_logo_small.png" width="100" height="100" class="d-inline-block align-top" alt="">
             </figure>
             <p>
-              <a href="...">Website Created by 32Market</a>
+              Website Created by 32Market
             </p>
           </div>
         </div>

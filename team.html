@@ -104,20 +104,20 @@
           <div class="left-container">
             <h5>Use this form to contact 32M Marketing and Sales</h5>
             <p>For operational/customer questions or needs, please submit a ticket by emailing contact@32market.com</p>
-            <form>
+            <form method="post" action="contact-form.php">
               <div class="container">
                 <div class="row form-group justify-content-center">
-                  <input class="col form-control w-50" type="text" name="" placeholder="First (required)" required>    
-                  <input class="col form-control w-50" type="text" name="" placeholder="Last (required)" required>
+                  <input class="col form-control w-50" type="text" name="first-name" placeholder="First (required)" required>    
+                  <input class="col form-control w-50" type="text" name="last-name" placeholder="Last (required)" required>
                   <div class="w-100">
                   </div>
-                  <input class="col form-control w-50" type="text" name="" placeholder="Email (required)" required>
-                  <input class="col form-control w-50" type="text" name="" placeholder="Phone">
+                  <input class="col form-control w-50" type="text" name="sender-email" placeholder="Email (required)" required>
+                  <input class="col form-control w-50" type="text" name="sender-phone" placeholder="Phone">
                   <div class="w-100"></div>
-                  <textarea class="col form-control" name="" placeholder="Your Message" rows="5"></textarea>
+                  <textarea class="col form-control" name="message" placeholder="Your Message" rows="5"></textarea>
                 </div>
                 <div class="form-group text-center">
-                  <button class="btn btnD1">Get in touch</button>
+                  <input class="btn btnD1" type="submit" name="submit" value="Get in touch">
                 </div>
               </div>
               </form>
@@ -133,7 +133,7 @@
             <p>1 (715) 386-2233</p>
 
             <h4>Email</h4>
-            <p>contact@32market.com</p>
+            <p><a href="mailto:contact@32market.com">contact@32market.com</a></p>
           </div>
         </div>
       </div>
