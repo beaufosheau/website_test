@@ -8,7 +8,7 @@
 }
 
 *, :after, :before {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -18,15 +18,15 @@ body {
 
 header {
   position: relative;
-  z-index: 1000000;
+  z-index: 100;
 }
 
 .container-fluid {
-    padding-right:0;
-    padding-left:0;
-    margin-right:auto;
-    margin-left:auto
- }
+  padding-right:0;
+  padding-left:0;
+  margin-right:auto;
+  margin-left:auto
+}
 
 /* Make navbar fit tighter */
 .navbar {
@@ -71,6 +71,55 @@ header {
 
 
 /*--------- HOME HERO CAROUSEL ----------*/
+.badges {
+  float: left;
+  transition: 0.2s;
+  padding: 1rem 0;
+  background: transparent;
+}
+
+.badges img {
+  height: 60px;
+}
+
+.badges:hover {
+  text-decoration: none;
+  opacity: 0.85;
+  transition: 0.2s;
+}
+
+.carousel .login {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 10%;
+  width: 100%;
+  max-width: 1140px;
+  z-index: 10;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.carousel .login .login-btn {
+  float: right;
+  background-color: #f8f9fa;
+  font-size: .7rem;
+  padding: .4rem 1rem;
+  margin: 1rem .5rem;
+  color: #0B4C8C;
+  border-radius: 5px;
+  border: solid #00000020 0.04rem;
+  transition: 0.2s;
+}
+
+.login .login-btn:hover {
+  text-decoration: none;
+  opacity: 0.8;
+  transition: 0.2s;
+}
+
 /* Make carousel fullscreen */
 .carousel-fullscreen .carousel-inner .carousel-item {
   height: 100vh;
@@ -303,10 +352,10 @@ header {
   background-image: linear-gradient(
                     rgba(255, 255, 255, 0.1),
                     rgba(255, 255, 255, 0.3)),
-                    url('../images/kiosk.png');
-  background-position: center right;
+                    url('../images/kiosk2.png');
+  background-position: top right;
   background-color: #fff;
-  background-size: 90%;
+  background-size: 80%;
   background-repeat: no-repeat;
   float: left;
   min-height: 37.5vw;
@@ -637,9 +686,9 @@ footer.footer .copyright figure {
   background-image: linear-gradient(
                     rgba(255, 255, 255, 0.95),
                     rgba(255, 255, 255, 0.8)),
-                    url('../images/bg-learn.jpg');
+                    url('../images/bg-learn2.jpg');
   background-repeat: no-repeat;
-  background-position: center top;
+  background-position: center 60%;
   background-size: cover;
   text-align: center;
   padding: 60px;
@@ -1176,6 +1225,64 @@ footer.footer .copyright figure {
 
 
 /*-------------------------------------------------*/
+/*          GDPR INQUIRY - PAGE ELEMENTS           */
+/*-------------------------------------------------*/
+
+/*----------- GDPR INQUIRIES ------------*/
+.gdpr {
+  width: 70%;
+  max-width: 920px;
+  color: #000000bf;
+}
+
+.gdpr p {
+  padding-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.gdpr .w-100 {
+  margin-bottom: .5rem;
+}
+
+#no {
+  margin-left: 1rem;
+}
+
+.gdpr .form-control {
+  /* margin: 0 .5rem; */
+}
+
+.gdpr .sig {
+  padding-top: 2rem;
+  color: #0B4C8C;
+}
+
+.gdpr .rad {
+  margin-right: 0.3rem;  
+  margin-top: 0.2rem;
+}
+
+.gdpr .form-group .btnD1 {
+  background: transparent;
+  border: 1px solid #00000050;
+  color: #00000090;
+  height: 50px;
+  padding: 0.5rem 2rem;
+  transition: 0.2s;
+}
+
+.gdpr .form-group .btnD1:hover {
+  border: 1px solid #00000090;
+  color: #000000bf;
+  transition: 0.2s;
+  box-shadow: 0px 1px 1px 1px #00000030;
+}
+/*              END SECTION              */
+/*---------------------------------------*/
+
+
+
+/*-------------------------------------------------*/
 /*          PRIVACY POLICY PAGE ELEMENTS           */
 /*-------------------------------------------------*/
 
@@ -1197,6 +1304,10 @@ footer.footer .copyright figure {
 /*--------- MEDIA QUIERIES ---------*/
 /* > 1601px */
 @media only screen and (min-width: 101rem) {
+  .carousel .login {
+    top: 7%;
+  }
+
   /* Section 1: Carousel */
   .sec1 .carousel-caption {
     padding: 5rem 12rem;
@@ -1221,6 +1332,10 @@ footer.footer .copyright figure {
 
 /* 1600px */
 @media only screen and (max-width: 100rem) {
+  .carousel .login {
+    top: 8%;
+  }
+
   /* Section 1: Header */
     .sec1 .info .info-text {
       top: 22%;
@@ -1265,6 +1380,10 @@ footer.footer .copyright figure {
 
 /* 1200px */
 @media only screen and (max-width: 74.9375em){
+  .carousel .login {
+    max-width: 940px;
+  }
+
   /* Navbar */
   .navbar {
     padding: 1rem 3rem;
@@ -1340,6 +1459,10 @@ footer.footer .copyright figure {
   }
 
   /* Home-Hero Carousel */
+  .carousel .login {
+    width: 80%;
+  }
+
   .carousel-fullscreen .carousel-inner .left-just {
     background-position: right center;
   }
@@ -1370,6 +1493,16 @@ footer.footer .copyright figure {
     margin: 1rem;
     font-size: .6rem;
     padding-top: 1rem;
+  }
+
+  .user-btn-grp .badges {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-btn-grp .badges img {
+    height: 65px;
   }
 
   /* Section 1: Slider */
@@ -1437,6 +1570,10 @@ footer.footer .copyright figure {
 
 /* 767px */
 @media only screen and (max-width: 46.9375em) {
+  .carousel .login {
+    max-width: 720px;
+  }
+
   /* Section 1: Carousel */
   .sec1 .info .info-text h1 {
     font-size: 1.5rem;
@@ -1481,8 +1618,16 @@ footer.footer .copyright figure {
   }
 
   /* Section 3 */
+  .overview {
+    padding: 1rem 2rem;
+  }
+
+  .overview .right-container {
+    width: 100%;
+  }
+
   .overview .right-content {
-    max-width: 80%;
+    max-width: 100%;
   }
 
   .overview-fact h4 {
@@ -1598,6 +1743,22 @@ footer.footer .copyright figure {
 
 /* 479px */
 @media only screen and (max-width: 29.9375em) {
+  .login {
+    width: 90%!important;
+    margin: 0;
+    padding: 0!important;
+  }
+  
+  .carousel .login-btn {
+    font-size: .5rem;
+    margin: 0;
+    padding: .1rem;
+  }
+
+  .carousel .badges img {
+    height: 50px;
+  }
+
   /* Section 1 */
   .info .info-content {
     width: 70%;
@@ -1766,6 +1927,11 @@ footer.footer .copyright figure {
 /* 336px */
 @media only screen and (max-width: 21em) {
   /* Home Hero Carousel */
+  .carousel .login a {
+    font-size: .5rem;
+    padding: .2rem;
+  }
+
   .carousel-caption h1 {
     font-size: 2.1rem;
   }
@@ -1812,8 +1978,12 @@ footer.footer .copyright figure {
   }
 
   /* Section 3 */
+  .overview {
+    padding: 1rem 1rem;
+  }
+
   .overview .right-content {
-    max-width: 85%;
+    max-width: 100%;
   }
 
   .overview-fact h4 {
